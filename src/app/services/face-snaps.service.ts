@@ -12,7 +12,8 @@ export class FaceSnapsService {
         description: 'Ceci est un canard',
         imageUrl: 'https://th.bing.com/th/id/OIP.xhhPcS2KleB8cFnl17NdpgHaFc?pid=ImgDet&rs=1',
         createdDate: new Date(),
-        snaps: 2635
+        snaps: 2635,
+        location: 'Saint-Floris'
       },
       {
         id: 2,
@@ -29,7 +30,6 @@ export class FaceSnapsService {
         imageUrl: "https://th.bing.com/th/id/R.8360829a408d8c8005f0d576a1ee3740?rik=p2xmB72HaOE7rw&pid=ImgRaw&r=0",
         createdDate: new Date(),
         snaps: 9999,
-        location: 'Saint-Floris'
       },
       {
        id: 4,
