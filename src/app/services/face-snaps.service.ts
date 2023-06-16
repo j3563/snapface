@@ -17,7 +17,7 @@ export class FaceSnapsService {
       {
         id: 2,
         title: 'SURICATE',
-        description: 'Ceci est probablement un suricate',
+        description: 'Moi',
         imageUrl: 'https://th.bing.com/th/id/OIP.mymANAZJvaU0x3Swqe0PiwHaE3?w=290&h=190&c=7&r=0&o=5&pid=1.7',
         createdDate: new Date(),
         snaps: 98
@@ -25,7 +25,7 @@ export class FaceSnapsService {
       {
         id: 3,
         title: 'BANANE',
-        description: 'Je crois bien que cette chose est une banane',
+        description: 'Le fruit suprême',
         imageUrl: "https://th.bing.com/th/id/R.8360829a408d8c8005f0d576a1ee3740?rik=p2xmB72HaOE7rw&pid=ImgRaw&r=0",
         createdDate: new Date(),
         snaps: 9999,
