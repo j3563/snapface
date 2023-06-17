@@ -48,3 +48,8 @@ Puis ajouter dans le angular.json :
   ....,
 }
 ```
+# NavBar
+
+Le composant utilisé ici est disponible ici : https://getbootstrap.com/docs/5.3/components/navbar/
+
+L'avantage de bootstrap est qu'il embarque une tonne de composant avec documentation.
