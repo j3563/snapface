@@ -1,12 +1,14 @@
-<div class="face-snap-card" [ngClass]="{ snapped: buttonText === 'Dislike...' }">
-    <h2>{{ faceSnap.title | uppercase }}</h2>
-    <a routerLink="/facesnaps">Back</a>
-    <p> Cette magnifique photo a été mise en ligne {{ faceSnap.createdDate | date: 'le dd MMMM yyyy à HH:mm' }}</p>
-    <img [src]="faceSnap.imageUrl" [alt] ="faceSnap.title ">
-    <p>{{ faceSnap.description }}</p>
-    <p *ngIf="faceSnap.location">Photo prise à {{ faceSnap.location }}</p>
+<div class="card face-snap-card" [ngClass]="{ snapped: buttonText === 'Dislike...' }">
+  <img [src]="faceSnap.imageUrl" [alt] ="faceSnap.title ">
+  <div class="card-body">
+    <h5 class="card-title">{{ faceSnap.title | uppercase }}</h5>
+    <p class="card-text">Cette magnifique photo a été mise en ligne {{ faceSnap.createdDate | date: 'le dd MMMM yyyy à HH:mm' }}</p>
+    <p class="card-text">{{ faceSnap.description }}</p>
+    <p *ngIf="faceSnap.location" class="card-text">Photo prise à {{ faceSnap.location }}</p>
     <p>
-      <button (click)="onSnap()">{{ buttonText }}</button>
+      <button class="btn btn-primary" (click)="onSnap()">{{ buttonText }}</button>
       <span [ngStyle]="{ color: 'rgb(0,' + faceSnap.snaps + ', 0)'}"> {{ faceSnap.snaps }}❤️  </span>
+      <a routerLink="/facesnaps">Back</a>
     </p>
-    </div>
+  </div>
+</div>
